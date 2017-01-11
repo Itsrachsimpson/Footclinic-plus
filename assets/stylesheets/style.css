@@ -1,0 +1,619 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+img {
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td,
+caption {
+    font-weight: normal;
+    vertical-align: top;
+    text-align: left;
+}
+
+q {
+    quotes: none;
+}
+
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+sub,
+sup,
+small {
+    font-size: 75%;
+}
+
+sub,
+sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+svg {
+    overflow: hidden;
+}
+
+body {
+    font: 13px / 1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+
+pre,
+code {
+    font-family: "DejaVu Sans Mono", Monaco, Consolas, monospace;
+}
+
+hr {
+    border: 0 #ccc solid;
+    border-top-width: 1px;
+    clear: both;
+    height: 0;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 19px;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: disc;
+}
+
+li {
+    margin-left: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+    margin-bottom: 20px;
+}
+
+
+/*end*/
+
+
+/*start of my styling.*/
+
+.bottomSub {
+    margin-bottom: 1em;
+}
+
+.sub {
+    font-size: 25px;
+    padding: 15px;
+    padding-right: 10em;
+}
+
+.sub-menu-parent {
+    position: relative;
+}
+
+.sub-menu {
+    visibility: hidden;
+    /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 99%;
+    left: -40px;
+    width: 6.5em;
+    transform: translateY(-2em);
+    z-index: -1;
+}
+
+.sub-menu-parent:hover .sub-menu {
+    visibility: visible;
+    /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+    /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+
+/* presentational */
+
+nav a:hover {
+    color: #8bd3e3;
+}
+
+.sub-menu {
+    background: white;
+}
+
+body {
+    background: white;
+    color: #333;
+    text-align: center;
+}
+
+.selection {
+    color: #8bd3e3;
+}
+
+a:link {
+    color: #4f8ab2;
+}
+
+.book {
+    text-align: right;
+    position: fixed;
+    background-color: #8bd3e3;
+    padding: 10px;
+    margin-left: -9.2em;
+}
+
+.bookingLink: {
+    color: #4f8ab2;
+}
+
+nav {
+    text-align: right;
+    font-size: 30px;
+}
+
+li a {
+    color: #c1c1c1;
+}
+
+li a:hover {
+    color: #8bd3e3;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    border-right: 1px solid #8bd3e3;
+    padding-right: 40px;
+    margin-top: 50px;
+}
+
+.logo {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+h1{
+    text-align: left;
+    color: #8bd3e3;
+}
+
+h3{
+    text-align: left;
+    color: #c1c1c1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    letter-spacing: 1px;
+}
+
+
+/*home*/
+
+.main {
+    padding-bottom: 50px;
+}
+
+.main img {
+    height: 450px;
+    width: 122%;
+    margin-left: -11%;
+}
+
+.maintext {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.footrub {
+    padding: 0px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    padding-top: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.images {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/*our work*/
+
+.mainwork {
+    text-align: left;
+}
+
+.woman {
+    font-style: italic;
+    text-align: left;
+}
+
+.awoman {
+    text-align: right;
+}
+
+
+/*about*/
+
+.aboutus {
+    border-bottom: 1px solid #8bd3e3;
+    margin-bottom: 20px;
+}
+
+.abouttext {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.team {
+    text-align: left;
+}
+
+.blond {
+    padding-bottom: 100px;
+}
+
+
+/*service*/
+
+.brake {
+    padding: 50px;
+}
+
+
+/*podiarty*/
+
+.mag img {
+    left: -10%;
+}
+
+
+/*contact*/
+
+#wrap {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.box1 {
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.form {
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 200px;
+    margin-right: 70em;
+    padding: 9px;
+    outline: 0;
+    border: solid 1px #E5E5E5;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+textarea {
+    width: 20em;
+    height: 150px;
+    line-height: 150%;
+    font-size: 14px;
+    color: #D7D7D7;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border-color: #C9C9C9;
+}
+
+.text textarea:focus {
+    color: #000;
+}
+
+.form label {
+    color: #999999;
+    float: left;
+}
+
+.submit input {
+    width: 100px;
+    padding: 9px 15px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #c1c1c1;
+    border: 0;
+    border-radius: 2px;
+    margin-right: 76em;
+}
+
+.submit input:hover {
+    cursor: pointer;
+    background-color: #8bd3e3;
+}
+
+
+/*booking*/
+
+.tital {
+    border: solid 1px #8bd3e3;
+    padding-bottom: 3em;
+    margin: 4em 0 4em 0;
+}
+
+.mainform {
+    background-color: #dcf1f6;
+    padding-bottom: 16em;
+    margin: 0.5em 0 4em 0;
+}
+
+.arrow {
+    padding-left: 89em;
+    margin-top: -6.5em;
+}
+
+.lable {
+    margin-top: -2em;
+    margin-left: 1em;
+}
+
+
+/*keep the same*/
+
+footer {
+    background-color: #8bd3e3;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-left: -9.2em;
+    width: 119%;
+    padding-bottom: 15em;
+}
+
+.openingtimes {
+    font-size: 20px;
+}
+
+.example-block {
+    background: #eee;
+    font-size: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.grid-container {
+    padding-bottom: 20px;
+}
+
+.grid-container>hr {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div[class*="push-"] section {
+    background: #dec;
+}
+
+div[class*="pull-"] section {
+    background: #fcd;
+}
+
+.dynamic-px-width {
+    display: block;
+}
